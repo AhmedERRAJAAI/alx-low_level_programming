@@ -1,3 +1,3 @@
-This is my hello wolrd C project
-the purpuse of this project is to get familiar with the C programmig language
+# This is my hello wolrd C project
+This is the first project in this C programming language project series
 
