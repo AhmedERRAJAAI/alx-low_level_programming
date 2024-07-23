@@ -5,11 +5,12 @@
 #include <stdlib.h>
 
 /**
- *struct dog - new data type
- *name of dog 
- * age of dog
- * */
-
+*struct dog - a new type of data
+*representing a dog
+*@name: dog name
+*@age: dog age
+*@owner: dog owner
+*/
 struct dog
 {
 char *name;
@@ -17,9 +18,10 @@ float age;
 char *owner;
 };
 
+
 /**
- *dog_t - typdef for DOG struct
- * */
+*dog_t - Typedef for struct dog
+*/
 typedef struct dog dog_t;
 
 
