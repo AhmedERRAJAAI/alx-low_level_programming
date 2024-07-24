@@ -47,7 +47,7 @@ int oper_div(int a, int b)
 }
 
 /**
- * op_mod - modulos
+ * oper_mod - modulos
  *
  * @a: int
  * @b: int
@@ -56,4 +56,4 @@ int oper_div(int a, int b)
 int oper_mod(int a, int b)
 {
 	return (a % b);
-
+}
