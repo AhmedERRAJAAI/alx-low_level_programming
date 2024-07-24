@@ -2,16 +2,16 @@
 #include <stdio.h>
 
 /**
- * print_name - print given name using pointer func
+ * print_name - use pointer func to print given name
  *
- * @name: char *
- * @f: function used to print name
+ * @nm: char *
+ * @f: print name
  */
-void print_name(char *name, void (*f)(char *))
+void print_name(char *nm, void (*f)(char *))
 {
-	if (name != NULL && f != NULL)
+	if (nm != NULL && f != NULL)
 	{
-		(*f)(name);
+		(*f)(nm);
 	}
 
 }
