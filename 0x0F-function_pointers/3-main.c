@@ -1,19 +1,17 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 #include "3-calc.h"
 
 /**
- * main - main func
+ * main - entry func to the program
+ * @argc: nbr arguments
+ * @argv: array of arguments
  *
- * @argc: arguments
- * @argv: args passed
- * Return: nbr int defined status
+ * Return: Always 0 (Success)
  */
 int main(int argc, char *argv[])
 {
-	int num_1, num_2;
-	int (*op)(int, int);
+	int arg1, arg2, result;
+	char o;
+	int (*func)(int, int);
 
 	if (argc != 4)
 	{
@@ -21,24 +19,28 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
-	num_1 = atoi(argv[1]);
-	num_2 = atoi(argv[3]);
-	op = get_op_func(argv[2]);
+	arg1 = atoi(argv[1]);
+	arg2 = atoi(argv[3]);
 
-	if (op == NULL)
+	func = get_op_func(argv[2]);
+
+	if (!func)
 	{
 		printf("Error\n");
 		exit(99);
 	}
 
-	if ((num_2 == 0) &&
-	((strcmp("/", argv[2]) == 0) || strcmp("%", argv[2]) == 0))
+	o = *argv[2];
+
+	if ((o == '/' || o == '%') && arg2 == 0)
 	{
 		printf("Error\n");
 		exit(100);
 	}
 
-	printf("%d\n", op(num_1, num_2));
+	result = func(arg1, arg2);
+
+	printf("%d\n", result);
 
 	return (0);
 }

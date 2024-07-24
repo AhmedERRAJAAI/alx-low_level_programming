@@ -1,9 +1,11 @@
+#include "3-calc.h"
+
 /**
- * op_add - add a and b
+ * op_add - adds to intigers
+ * @a: st int
+ * @b: nd int
  *
- * @a: int
- * @b: int
- * Return: int
+ * Return: sum of a and b
  */
 int op_add(int a, int b)
 {
@@ -11,49 +13,49 @@ int op_add(int a, int b)
 }
 
 /**
- * oper_sub - substraction
+ * op_sub - diff between two ints
+ * @a: st int
+ * @b: nd int
  *
- * @a: int
- * @b: int
- * Return: int
+ * Return: diff a and b
  */
-int oper_sub(int a, int b)
+int op_sub(int a, int b)
 {
 	return (a - b);
 }
 
 /**
- * oper_mul - multiplication
+ * op_mul - multiplication
+ * * @a: st int
+ * @b: nd int
  *
- * @a: int
- * @b: int
- * Return: int
+ * Return: product of a and b
  */
-int oper_mul(int a, int b)
+int op_mul(int a, int b)
 {
 	return (a * b);
 }
 
 /**
- * oper_div - division
+ * op_div - division
+ * @a: st int
+ * @b: nd int
  *
- * @a: int
- * @b: int
- * Return: int
+ * Return: result of the division of a and b
  */
-int oper_div(int a, int b)
+int op_div(int a, int b)
 {
 	return (a / b);
 }
 
 /**
- * oper_mod - modulos
+ * op_mod - calculates the modulos
+ * @a: st integer
+ * @b: nd integer
  *
- * @a: int
- * @b: int
- * Return: int
+ * Return: modulos a / b
  */
-int oper_mod(int a, int b)
+int op_mod(int a, int b)
 {
 	return (a % b);
 }
