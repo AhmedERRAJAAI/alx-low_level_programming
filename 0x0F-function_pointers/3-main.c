@@ -4,11 +4,11 @@
 #include "3-calc.h"
 
 /**
- * main - Entry function
+ * main - main func
  *
- * @argc: number of arguments
+ * @argc: arguments
  * @argv: args passed
- * Return: int defined success status
+ * Return: nbr int defined status
  */
 int main(int argc, char *argv[])
 {

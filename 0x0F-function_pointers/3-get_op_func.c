@@ -4,7 +4,7 @@
 #include "3-calc.h"
 
 /**
- * get_op_func - get operation function using operator
+ * get_op_func - make operation based on op
  *
  * @s: pointer function
  * Return: int(*)(int, int)
@@ -12,11 +12,11 @@
 int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
-		{"+", oper_add},
-		{"-", oper_sub},
-		{"*", oper_mul},
-		{"/", oper_div},
-		{"%", oper_mod},
+		{"+", op_add},
+		{"-", op_sub},
+		{"*", op_mul},
+		{"/", op_div},
+		{"%", op_mod},
 		{NULL, NULL}
 	};
 	int i;

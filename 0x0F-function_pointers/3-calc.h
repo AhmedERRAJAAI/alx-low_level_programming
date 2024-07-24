@@ -1,20 +1,20 @@
 #ifndef HEADER_FILE
 #define HEADER_FILE
 /**
- * struct oper - Struct oper
+ * struct op - Struct op
  *
- * @oper: The operator
- * @f: The function associated
+ * @op: operator
+ * @f: function
  */
-typedef struct oper
+typedef struct op
 {
-	char *oper;
+	char *op;
 	int (*f)(int a, int b);
-} oper_t;
+} op_t;
 int op_add(int a, int b);
-int oper_sub(int a, int b);
-int oper_mul(int a, int b);
-int oper_div(int a, int b);
-int oper_mod(int a, int b);
+int op_sub(int a, int b);
+int op_mul(int a, int b);
+int op_div(int a, int b);
+int op_mod(int a, int b);
 int (*get_op_func(char *s))(int, int);
 #endif
