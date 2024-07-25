@@ -6,6 +6,7 @@
  * print_numbers -  function that prints numbers, followed by a new line
  *
  * @n: number of args
+ * @separator: string used for printing
  * @...: int args
  * Return: sum of args:int
  */
