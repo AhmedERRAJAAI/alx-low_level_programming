@@ -3,15 +3,15 @@
 /**
  * sum_them_all - sum all agrs
  *
- * @n: number of args passed
+ * @n: number of args
  * @...: int args
- * Return: The sum of args
+ * Return: sum of args:int
  */
 int sum_them_all(const unsigned int n, ...)
 {
 	va_list args;
-	int sum;
 	unsigned int i;
+	int sum;
 
 	if (n == 0)
 	{
@@ -21,10 +21,8 @@ int sum_them_all(const unsigned int n, ...)
 	sum = 0;
 	for (i = 0; i < n; i++)
 	{
-		int value = va_arg(args, int);
-		sum += value;
+		sum += va_arg(args, int);
 	}
-
 	va_end(args);
-	return sum;
+	return (sum);
 }
