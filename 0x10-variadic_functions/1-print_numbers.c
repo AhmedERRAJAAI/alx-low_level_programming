@@ -5,10 +5,9 @@
 /**
  * print_numbers -  function that prints numbers, followed by a new line
  *
- * @n: number of args
  * @separator: string used for printing
+ * @n: number of args
  * @...: int args
- * Return: sum of args:int
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
