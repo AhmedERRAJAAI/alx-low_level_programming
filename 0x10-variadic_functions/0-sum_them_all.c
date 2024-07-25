@@ -2,7 +2,8 @@
 
 
 /**
- * 
+ * sum_them_all - sum all agrs
+ *
  * @n: number of args passed
  * @...: int args
  * Return: The sum of args
