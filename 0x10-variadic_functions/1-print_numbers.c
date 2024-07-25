@@ -22,9 +22,8 @@ unsigned int i;
 			printf("%d", va_arg(args, int));
 			if (i != (n - 1))
 			{
-				if (separator != NULL){
+				if (separator != NULL)
 					printf("%s", separator);
-				}
 			}
 		}
 		va_end(args);
